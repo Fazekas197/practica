@@ -115,7 +115,7 @@ export const genericContent = defineType({
     // ABOUT SECTION //
     defineField({
       name: 'aboutImg',
-      title: 'Promotion Image',
+      title: 'About Image',
       type: 'image',
       validation: (rule) => rule.required(),
       group: 'aboutSection',
