@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export const home = defineType({
-  name: 'home',
-  title: 'Home Page Content',
+export const genericContent = defineType({
+  name: 'generic',
+  title: 'Generic Content',
   type: 'document',
   groups: [
     {
@@ -24,6 +24,10 @@ export const home = defineType({
     {
       name: 'aboutSection',
       title: 'About Section',
+    },
+    {
+      name: 'contactSection',
+      title: 'Contact Section',
     },
   ],
   fields: [
@@ -129,6 +133,38 @@ export const home = defineType({
       type: 'text',
       validation: (rule) => rule.required(),
       group: 'aboutSection',
+    }),
+
+    // CONTACT SECTION //
+    defineField({
+      name: 'location',
+      title: 'Location',
+      type: 'string',
+      validation: (rule) => rule.required(),
+      group: 'contactSection',
+    }),
+    defineField({
+      name: 'contactDetails',
+      title: 'Contact Details',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'icon',
+              type: 'string',
+              description: 'Icons from https://icones.js.org',
+            },
+            {
+              name: 'value',
+              type: 'string',
+            },
+          ],
+        },
+      ],
+      validation: (rule) => rule.required(),
+      group: 'contactSection',
     }),
   ],
 })
