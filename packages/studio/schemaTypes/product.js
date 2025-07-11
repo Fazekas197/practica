@@ -31,24 +31,9 @@ export const product = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'specs',
-      title: 'Product Specs',
-      type: 'array',
-      of: [
-        {
-          type: 'object',
-          fields: [
-            {
-              name: 'param',
-              type: 'string',
-            },
-            {
-              name: 'value',
-              type: 'string',
-            },
-          ],
-        },
-      ],
+      name: 'cod',
+      title: 'Product Code',
+      type: 'number',
       validation: (rule) => rule.required(),
     }),
   ],
