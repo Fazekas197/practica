@@ -1,25 +1,25 @@
 import {defineField, defineType} from 'sanity'
 
-export const home = defineType({
-  name: 'home',
-  title: 'Home Page Content',
+export const categories = defineType({
+  name: 'categories',
+  title: 'Categories',
   type: 'document',
   fields: [
     defineField({
-      name: 'heroTitle',
-      title: 'Hero Section Title',
+      name: 'name',
+      title: 'Category Name',
       type: 'string',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'heroSubtitle',
-      title: 'Hero Section Subtitle',
-      type: 'string',
+      name: 'desc',
+      title: 'Category Description',
+      type: 'text',
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'heroImg',
-      title: 'Hero Section Image',
+      name: 'image',
+      title: 'Category Image',
       type: 'image',
       validation: (rule) => rule.required(),
     }),
