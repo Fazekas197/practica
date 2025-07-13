@@ -32,6 +32,27 @@
 		:text="data.aboutText"
 		:img="data.aboutImg"
 	/>
+
+	<div class="bg-gray-900 text-white py-20 space-y-12">
+		<h2 class="text-4xl xl:text-6xl text-center">Ce zic clienții</h2>
+		<UCarousel
+			v-slot="{ item }"
+			arrows
+			:items="testimonials"
+			class="mx-auto w-3/5"
+			loop
+			:ui="{
+				prev: '!p-0 size-10 bg-transparent text-white hover:bg-transparent hover:cursor-pointer',
+				next: '!p-0 size-10 bg-transparent text-white hover:bg-transparent hover:cursor-pointer',
+			}"
+		>
+			<Testimonials
+				:rating="item.rating"
+				:author="item.name"
+				:testimonial="item.review"
+			/>
+		</UCarousel>
+	</div>
 </template>
 
 <script setup>
@@ -53,4 +74,12 @@
 		"aboutImg": aboutImg.asset._ref
 	}`;
 	const { data } = await useSanityQuery(query);
+
+	const testimonialQuery = groq`
+	*[_type == "testimonial"]{
+		name,
+    	rating, 
+   	 	review
+	}`;
+	const { data: testimonials } = await useSanityQuery(testimonialQuery);
 </script>
