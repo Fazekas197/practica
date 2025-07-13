@@ -16,7 +16,7 @@
 				>
 					{{ title }}
 				</h2>
-				<p class="lg:text-lg text-base leading-snug">
+				<p class="text-lg leading-snug">
 					{{ text }}
 				</p>
 				<slot />
