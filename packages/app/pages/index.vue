@@ -26,6 +26,12 @@
 		:promotion="data.promoDesc"
 		:img="data.promoImg"
 	/>
+
+	<CloseUpSection
+		:title="data.aboutTitle"
+		:text="data.aboutText"
+		:img="data.aboutImg"
+	/>
 </template>
 
 <script setup>
@@ -41,7 +47,10 @@
 		},
 		promoTitle, 
   		promoDesc,
-  		"promoImg": promoImg.asset._ref
+  		"promoImg": promoImg.asset._ref,
+		aboutTitle,
+		aboutText,
+		"aboutImg": aboutImg.asset._ref
 	}`;
 	const { data } = await useSanityQuery(query);
 </script>
