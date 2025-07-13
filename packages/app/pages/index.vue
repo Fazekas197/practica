@@ -20,6 +20,12 @@
 			/>
 		</div>
 	</div>
+
+	<Banner
+		:title="data.promoTitle"
+		:promotion="data.promoDesc"
+		:img="data.promoImg"
+	/>
 </template>
 
 <script setup>
@@ -32,8 +38,10 @@
 			name, 
 			desc, 
 			"image": image.asset._ref
-		}
+		},
+		promoTitle, 
+  		promoDesc,
+  		"promoImg": promoImg.asset._ref
 	}`;
-
 	const { data } = await useSanityQuery(query);
 </script>
