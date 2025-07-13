@@ -7,7 +7,7 @@
 		:cta2="{ title: 'Noutăți', link: '/noutati' }"
 	/>
 
-	<div class="my-10 mb-24 mx-10">
+	<div class="my-10 mb-24 mx-10 lg:mx-0">
 		<h2 class="text-4xl xl:text-6xl text-center">Categorii Populare</h2>
 		<div class="xl:flex xl:gap-x-15 justify-center my-10 space-y-10">
 			<Card
