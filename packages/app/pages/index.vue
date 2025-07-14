@@ -33,17 +33,17 @@
 		:img="data.aboutImg"
 	/>
 
-	<div class="bg-gray-900 text-white py-20 space-y-12">
+	<div class="bg-gray-900 text-white px-10 py-20 space-y-12">
 		<h2 class="text-4xl xl:text-6xl text-center">Ce zic clienții</h2>
 		<UCarousel
 			v-slot="{ item }"
 			arrows
 			:items="testimonials"
-			class="mx-auto w-3/5"
 			loop
 			:ui="{
-				prev: '!p-0 size-10 bg-transparent text-white hover:bg-transparent hover:cursor-pointer',
-				next: '!p-0 size-10 bg-transparent text-white hover:bg-transparent hover:cursor-pointer',
+				arrows: 'flex justify-center gap-10 lg:gap-0 mt-10',
+				prev: 'block scale-250 relative bg-transparent hover:bg-transparent -translate-y-0 start-0 text-white border-none ring-0 p-0 lg:p-0',
+				next: 'block scale-250 relative bg-transparent hover:bg-transparent -translate-y-0 start-0 text-white  border-none ring-0 p-0 lg:p-0',
 			}"
 		>
 			<Testimonials

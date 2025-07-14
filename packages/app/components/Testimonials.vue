@@ -1,5 +1,5 @@
 <template>
-	<div class="lg:w-4/5 mx-auto space-y-6">
+	<div class="lg:w-1/2 mx-auto space-y-6">
 		<div>
 			<UIcon
 				:name="starIcon"
