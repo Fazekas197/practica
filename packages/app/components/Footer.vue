@@ -1,5 +1,5 @@
 <template>
-	<footer class="bg-gray-900 text-white">
+	<footer class="bg-black text-white">
 		<div
 			class="lg:flex justify-between mx-auto p-16 lg:px-[7.5rem] space-y-10 lg:space-y-0 w-fit lg:w-full 2xl:w-3/4"
 		>
@@ -49,7 +49,7 @@
 
 		<!-- CREDITS -->
 		<div
-			class="bg-black text-white text-center py-3 px-10 text-xs lg:text-base font-secondary"
+			class="bg-black border-t-[1px] border-white/25 text-white text-center py-3 px-10 text-xs lg:text-base font-secondary"
 		>
 			<p>{{ credit }}</p>
 		</div>
