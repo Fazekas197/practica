@@ -33,6 +33,11 @@
 		:img="data.aboutImg"
 	/>
 
+	<div class="my-20 space-y-16">
+		<h2 class="text-4xl xl:text-6xl text-center">De ce noi?</h2>
+		<Grid :elems="data.benefits" />
+	</div>
+
 	<div class="bg-gray-900 text-white px-10 py-20 space-y-12">
 		<h2 class="text-4xl xl:text-6xl text-center">Ce zic clienții</h2>
 		<UCarousel
@@ -71,7 +76,8 @@
   		"promoImg": promoImg.asset._ref,
 		aboutTitle,
 		aboutText,
-		"aboutImg": aboutImg.asset._ref
+		"aboutImg": aboutImg.asset._ref,
+		benefits
 	}`;
 	const { data } = await useSanityQuery(query);
 
