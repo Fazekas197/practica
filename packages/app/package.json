@@ -15,6 +15,7 @@
 		"@nuxtjs/robots": "5.2.11",
 		"@nuxtjs/sanity": "1.13.3",
 		"@nuxtjs/sitemap": "7.4.3",
+		"@portabletext/vue": "^1.0.12",
 		"nuxt": "^3.17.5",
 		"vue": "^3.5.17",
 		"vue-router": "^4.5.1"
