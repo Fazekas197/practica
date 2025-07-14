@@ -1,12 +1,12 @@
 <template>
-	<div class="m-20 w-3/5 mx-auto space-y-12">
+	<div class="mx-6 my-20 xl:m-20 xl:w-3/5 xl:mx-auto space-y-12">
 		<div class="space-y-6">
 			<h2 class="text-4xl xl:text-6xl">{{ data.title }}</h2>
 			<p class="text-lg xl:text-xl">{{ data.desc }}</p>
 		</div>
 		<SanityImage
 			:asset-id="data.cover"
-			class="rounded-3xl object-cover w-full aspect-video"
+			class="rounded-3xl object-cover w-full aspect-square xl:aspect-video"
 		/>
 
 		<div class="flex flex-col gap-2 lg:gap-4">

@@ -1,7 +1,7 @@
 <template>
 	<SanityImage
 		:asset-id="value.asset._ref"
-		class="rounded-3xl object-cover w-full aspect-video"
+		class="rounded-3xl object-cover w-full aspect-square xl:aspect-video"
 	/>
 </template>
 
