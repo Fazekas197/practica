@@ -1,6 +1,6 @@
 <template>
 	<div class="overflow-hidden">
-		<Header :links="links" class="absolute bg-white">
+		<Header :links="links" class="absolute">
 			<template v-slot:logo>
 				<h1 class="text-xl lg:text-2xl">SONOR</h1>
 			</template>

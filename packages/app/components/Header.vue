@@ -1,6 +1,6 @@
 <template>
 	<header
-		class="w-full px-6 py-3 lg:px-12 lg:py-6 flex items-center justify-between text-black z-50"
+		class="w-full px-6 py-3 lg:px-12 lg:py-6 flex items-center justify-between text-white z-50"
 	>
 		<NuxtLink
 			to="/"
@@ -17,19 +17,19 @@
 		>
 			<span
 				:class="[
-					'w-8 h-0.5 bg-black transition-transform duration-300',
+					'w-8 h-0.5 bg-white transition-transform duration-300',
 					navOpen ? 'rotate-45 translate-y-2' : '',
 				]"
 			/>
 			<span
 				:class="[
-					'w-8 h-0.5 bg-black transition-opacity duration-300',
+					'w-8 h-0.5 bg-white transition-opacity duration-300',
 					navOpen ? 'opacity-0' : 'opacity-100',
 				]"
 			/>
 			<span
 				:class="[
-					'w-8 h-0.5 bg-black transition-transform duration-300',
+					'w-8 h-0.5 bg-white transition-transform duration-300',
 					navOpen ? '-rotate-45 -translate-y-2' : '',
 				]"
 			/>
@@ -37,7 +37,7 @@
 
 		<nav
 			:class="[
-				'text-center fixed inset-y-0 left-0 w-full bg-white flex flex-col justify-center px-6 gap-y-16 transform transition-transform duration-300 ease-out z-40 lg:hidden',
+				'text-center fixed inset-y-0 left-0 w-full bg-gray-900 flex flex-col justify-center px-6 gap-y-16 transform transition-transform duration-300 ease-out z-40 lg:hidden',
 				navOpen ? 'translate-x-0' : '-translate-x-full',
 			]"
 		>
