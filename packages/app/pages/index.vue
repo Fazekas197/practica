@@ -58,6 +58,8 @@
 			/>
 		</UCarousel>
 	</div>
+
+	<Newsletter />
 </template>
 
 <script setup>
