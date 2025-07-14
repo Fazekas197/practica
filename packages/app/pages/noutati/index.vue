@@ -7,7 +7,6 @@
 			:desc="news.desc"
 			:id="news._id"
 		/>
-		<Newsletter />
 	</div>
 </template>
 

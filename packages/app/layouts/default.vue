@@ -6,6 +6,7 @@
 			</template>
 		</Header>
 		<slot></slot>
+		<Newsletter />
 		<Footer
 			title="SONOR"
 			:location="footerData.location"
