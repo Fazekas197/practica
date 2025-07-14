@@ -1,1 +1,32 @@
-<template></template>
+<template>
+	<div
+		class="m-12 xl:m-20 flex flex-col-reverse xl:flex-row xl:w-4/5 justify-center gap-y-12 xl:gap-x-16"
+	>
+		<div class="xl:w-1/4">
+			<img src="/portret.jpg" class="object-cover" />
+			<p class="text-lg xl:text-xl text-center font-semibold">
+				Fazekaș Cosmin
+			</p>
+		</div>
+		<div class="space-y-6 xl:space-y-12">
+			<h2 class="text-4xl xl:text-6xl">Contact</h2>
+			<form class="space-y-3 xl:space-y-6">
+				<UInput
+					placeholder="Enter your email"
+					size="xl"
+					class="w-full"
+					type="email"
+				/>
+				<UTextarea
+					placeholder="Enter your message"
+					size="xl"
+					:rows="10"
+					class="w-full"
+				/>
+				<UButton class="p-0 !px-4 hover:bg-red/50" type="submit"
+					>Trimite</UButton
+				>
+			</form>
+		</div>
+	</div>
+</template>
