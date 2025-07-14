@@ -63,6 +63,10 @@
 </template>
 
 <script setup>
+	definePageMeta({
+		layout: "home",
+	});
+
 	const query = groq`
 	*[_type == "generic"][0]{
 		heroTitle,
