@@ -10,7 +10,9 @@
 				class="w-full"
 				type="email"
 			/>
-			<UButton class="p-0 !px-4 hover:bg-red/50">Sumbit</UButton>
+			<UButton class="p-0 !px-4 hover:bg-red/50" type="submit"
+				>Sumbit</UButton
+			>
 		</form>
 	</div>
 </template>
