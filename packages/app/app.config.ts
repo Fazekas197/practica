@@ -17,7 +17,7 @@ export default defineAppConfig({
 				{
 					color: "primary",
 					variant: "solid",
-					class: "text-white hover:bg-white hover:border-white hover:text-red",
+					class: "text-white hover:bg-red/50 hover:border-white hover:text-red",
 				},
 			],
 		},

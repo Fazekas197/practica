@@ -12,7 +12,7 @@
 			<UButton
 				v-if="cta"
 				:to="cta.link"
-				class="w-full justify-center mt-auto hover:bg-red/50"
+				class="w-full justify-center mt-auto"
 			>
 				{{ cta.title }}
 			</UButton>
