@@ -15,7 +15,7 @@
 				:img="cat.image"
 				:title="cat.name"
 				:text="cat.desc"
-				:cta="{ title: 'Descoperă', link: `/produse/${cat.name}` }"
+				:cta="{ title: 'Descoperă', link: `/produse` }"
 				class="mx-auto xl:m-0"
 			/>
 		</div>
