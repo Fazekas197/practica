@@ -14,6 +14,27 @@
 		</div>
 
 		<UButton to="/noutati">Înapoi</UButton>
+
+		<div class="mt-20 space-y-6">
+			<h3 class="text-2xl xl:text-3xl">Comentarii</h3>
+			<form @submit.prevent="addComm" class="xl:w-4/5 space-y-3">
+				<h4 class="text-lg xl:text-xl">Adaugă un comentariu</h4>
+				<UTextarea v-model="currentComm" :rows="3" class="w-full" />
+				<UButton type="submit" class="text-lg cursor-pointer" size="sm"
+					>Adaugă</UButton
+				>
+			</form>
+		</div>
+
+		<div class="space-y-3">
+			<div
+				v-for="comm in comms"
+				class="border-[1px] p-4 px-6 rounded-3xl xl:w-4/5"
+			>
+				<p>{{ comm.date }}</p>
+				<p class="text-lg xl:text-xl">{{ comm.comm }}</p>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -60,4 +81,16 @@
 				h("p", { class: "md:text-lg lg:text-xl" }, slots.default?.()),
 		},
 	};
+
+	const today = new Date();
+	const comms = ref([]);
+
+	const currentComm = ref("");
+	function addComm() {
+		comms.value.push({
+			date: today.toLocaleDateString("ro-RO"),
+			comm: currentComm.value,
+		});
+		currentComm.value = "";
+	}
 </script>
