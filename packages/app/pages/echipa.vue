@@ -40,7 +40,7 @@
 	});
 	async function sendEmail() {
 		const html = `
-			<div style="width: 50%">
+			<div>
 				<h1>New Email From Your Website</h1>
 				<h2>Email: ${form.value.email}</h2>
 				<h2>Message:</h2>
