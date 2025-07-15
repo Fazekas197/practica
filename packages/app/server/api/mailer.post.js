@@ -14,12 +14,12 @@ const transporter = nodemailer.createTransport({
 });
 
 export default defineEventHandler(async (event) => {
-	const { subject, html } = await readBody(event);
+	const { html } = await readBody(event);
 
 	await transporter.sendMail({
 		from: `"WEBSITE EMAIL" ${user}`,
 		to: user,
-		subject: `[New Email From Your Website]: ${subject}`,
+		subject: `[New Email From Your Website]`,
 		html,
 	});
 });
