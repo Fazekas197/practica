@@ -4,9 +4,13 @@
 	>
 		<div class="xl:w-1/4">
 			<img src="/portret.jpg" class="object-cover" />
-			<p class="text-lg xl:text-xl text-center font-semibold">
-				Fazekaș Cosmin
-			</p>
+			<a
+				href="/cv.pdf"
+				target="_blank"
+				class="block text-lg xl:text-xl text-center font-semibold underline"
+			>
+				Fazekaș Cosmin - CV
+			</a>
 		</div>
 		<div class="space-y-6 xl:space-y-12">
 			<h2 class="text-4xl xl:text-6xl">Contact</h2>
