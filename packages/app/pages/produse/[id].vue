@@ -1,15 +1,14 @@
 <template>
 	<section
-		class="px-6 py-8 space-y-6 lg:flex lg:gap-x-10 lg:justify-center lg:px-60 lg:py-16 mx-auto max-w-l"
+		class="px-6 py-8 space-y-6 lg:flex lg:gap-x-20 lg:justify-center lg:px-60 lg:py-16 mx-auto max-w-l"
 	>
 		<UCarousel
 			v-slot="{ item }"
 			arrows
 			:items="data.images"
 			loop
-			class="w-full max-w-lg mx-auto shadow-2xl"
+			class="w-full max-w-md mx-auto shadow-2xl"
 			:ui="{
-				arrows: 'flex justify-center gap-10 lg:gap-0 mt-10',
 				prev: 'scale-250  bg-transparent hover:bg-transparent text-black border-none ring-0 p-0 lg:p-0',
 				next: ' scale-250  bg-transparent hover:bg-transparent text-black  border-none ring-0 p-0 lg:p-0',
 			}"
